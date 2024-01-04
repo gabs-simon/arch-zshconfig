@@ -1,0 +1,36 @@
+"$schema" = '~/.config/starship/config-schema.json'
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[git_branch]
+style = 'blue'
+
+[directory]
+style = 'blue bold'
+truncate_to_repo = false
+truncation_length = 8
+
+[python]
+disabled = true
+
+[ruby]
+disabled = true
+
+[hostname]
+ssh_only = false
+style = "bold blue"
+format = "[$ssh_symbol$hostname]($style) [:](bold dimmed) "
+
+[username]
+style_user = "bold blue"
+style_root = "bold red"
+disabled = false
+show_always = true
+format = '[$user]($style) [@](bold dimmed) '
