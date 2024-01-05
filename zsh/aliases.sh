@@ -15,6 +15,8 @@ function mkcd takedir() {
   mkdir -p $@ && cd ''${@:$#}
 }
 
+eval $(thefuck --alias)
+
 # downloads and extracts a tarball
 function taketar() {
   local data thedir
