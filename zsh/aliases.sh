@@ -32,11 +32,17 @@ function takegit() {
   cd "$(basename ''${1%%.git})"
 }
 
+function takeFile() {
+  wget "$1"
+}
+
 function take() {
   if [[ $1 =~ ^(https?|ftp).*\.(tar\.(gz|bz2|xz)|tgz)$ ]]; then
     taketar "$1"
   elif [[ $1 =~ ^([A-Za-z0-9]\+@|https?|git|ssh|ftps?|rsync).*\.git/?$ ]]; then
     takegit "$1"
+  elif [[ $1 =~ ^(https?).*$ ]]; then
+    takefile "$1"
   else
     takedir "$@"
   fi
