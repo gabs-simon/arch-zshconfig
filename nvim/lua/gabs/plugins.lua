@@ -1,8 +1,13 @@
-require("lazy").setup({ { "rebelot/kanagawa.nvim" },
-  "folke/which-key.nvim",
+require("lazy").setup({ 
+  -- kanagawa: theme
+  { "rebelot/kanagawa.nvim" },
+  -- telescope: search interface
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+  -- treesitter: syntax highlighter
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  -- bufferline: open files & buffers as tabs
   { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
+  -- nvim-tree: file explorer as sidebar
   {
     "nvim-tree/nvim-tree.lua",
       version = "*",
@@ -10,22 +15,28 @@ require("lazy").setup({ { "rebelot/kanagawa.nvim" },
       dependencies = { "nvim-tree/nvim-web-devicons" },
       config = function() require("nvim-tree").setup {} end
   },
-  "mbbill/undotree",
-  --- Uncomment these if you want to manage the language servers from neovim
+  -- undotree: keeps history files
+  { "mbbill/undotree" },
+  -- mason: install LSP servers
   {'williamboman/mason.nvim'},
   {'williamboman/mason-lspconfig.nvim'},
-
+  -- lsp-zero: prebuilt lsp setup with all requirements
   {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
   {'neovim/nvim-lspconfig'},
   {'hrsh7th/cmp-nvim-lsp'},
   {'hrsh7th/nvim-cmp'},
   {'L3MON4D3/LuaSnip'},
-
+  -- noice: replacement for message, cmdline and popupmenu
   { "folke/noice.nvim", event = "VeryLazy", dependencies = { "rcarriga/nvim-notify", "MunifTanjim/nui.nvim" } },
+  -- lualine: statusline replacement
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
+  -- alpha: better initial screen
   { "goolord/alpha-nvim", config = function ()
         require'alpha'.setup(require'alpha.themes.startify'.config)
     end },
+  -- copilot: coding assistant llm
+  { "github/copilot.vim" },
+  -- toggeterm: easy toggle for shell access
   { "akinsho/toggleterm.nvim", version = "*", config = true }
 })
 
