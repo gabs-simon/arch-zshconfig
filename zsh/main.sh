@@ -18,7 +18,7 @@ if [ $(uname -r | sed -n 's/.*\( *Microsoft *\).*/\1/ip') ]; then
   [[ -n ${key[Right]} ]] && bindkey "${key[Right]}" forward-char
 fi
 
-source /home/gabs/.config/broot/launcher/bash/br
+source ~/.config/broot/launcher/bash/br
 
 # Aliases
 source ~/.config/zsh/aliases.sh
