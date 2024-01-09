@@ -37,6 +37,33 @@ require("lazy").setup({
   -- copilot: coding assistant llm
   { "github/copilot.vim" },
   -- toggeterm: easy toggle for shell access
-  { "akinsho/toggleterm.nvim", version = "*", config = true }
+  { "akinsho/toggleterm.nvim", version = "*", config = true },
+  -- neorg: note-taking
+  { "nvim-neorg/neorg",
+    config = function() 
+      require('neorg').setup {
+        load = {
+          ["core.defaults"] = {},
+          ["core.completion"] = {},
+          ["core.journal"] = {
+            config = {
+              workspace = "notes",
+              journal_folder = "journal"
+            }
+          },
+          ["core.concealer"] = {},
+          ["core.dirman"] = {
+            config = {
+              workspaces = {
+                notes = "~/notes"
+              }
+            }
+          },
+        }
+      }
+    end,
+    run = ":Neorg sync-parsers",
+    requires = "nvim-lua/plenary.nvim"
+  }
 })
 
