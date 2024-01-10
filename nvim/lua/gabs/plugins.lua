@@ -44,7 +44,6 @@ require("lazy").setup({
       require('neorg').setup {
         load = {
           ["core.defaults"] = {},
-          ["core.completion"] = {},
           ["core.journal"] = {
             config = {
               workspace = "notes",

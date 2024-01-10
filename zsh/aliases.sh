@@ -5,10 +5,6 @@ alias ls='lsd';
 alias vi='nvim';
 alias vim='nvim';
 
-alias pbcopy="/mnt/c/Windows/System32/clip.exe";
-alias pbpaste="/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -command Get-Clipboard";
-alias explorer="/mnt/c/Windows/explorer.exe";
-
 # mkcd is equivalent to takedir
 function mkcd takedir() {
   mkdir -p $@ && cd ''${@:$#}
