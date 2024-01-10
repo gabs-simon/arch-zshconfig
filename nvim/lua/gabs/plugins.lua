@@ -40,27 +40,6 @@ require("lazy").setup({
   { "akinsho/toggleterm.nvim", version = "*", config = true },
   -- neorg: note-taking
   { "nvim-neorg/neorg",
-    config = function() 
-      require('neorg').setup {
-        load = {
-          ["core.defaults"] = {},
-          ["core.journal"] = {
-            config = {
-              workspace = "notes",
-              journal_folder = "journal"
-            }
-          },
-          ["core.concealer"] = {},
-          ["core.dirman"] = {
-            config = {
-              workspaces = {
-                notes = "~/notes"
-              }
-            }
-          },
-        }
-      }
-    end,
     run = ":Neorg sync-parsers",
     requires = "nvim-lua/plenary.nvim"
   }

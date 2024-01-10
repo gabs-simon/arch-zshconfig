@@ -1,9 +1,12 @@
-alias cd='z';
 alias refresh='source ~/.zshrc';
 alias show_path='echo $PATH';
 alias ls='lsd';
 alias vi='nvim';
 alias vim='nvim';
+
+# Zoxide setup
+eval "$(zoxide init zsh)"
+alias cd='z';
 
 # mkcd is equivalent to takedir
 function mkcd takedir() {
