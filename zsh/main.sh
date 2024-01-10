@@ -23,6 +23,9 @@ source ~/.config/zsh/completions.sh
 # Install plugins
 source ~/.config/zsh/plugins.sh
 
+# Keep everything ffs
+HISTSIZE=1000000
+SAVEHIST=1000000
 
 # fixes duplication of commands when using tab-completion
 PS1='[\u@\h \W]\$ '

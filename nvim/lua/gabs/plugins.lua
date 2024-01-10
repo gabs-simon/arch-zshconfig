@@ -31,9 +31,7 @@ require("lazy").setup({
   -- lualine: statusline replacement
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
   -- alpha: better initial screen
-  { "goolord/alpha-nvim", config = function ()
-        require'alpha'.setup(require'alpha.themes.startify'.config)
-    end },
+  { "goolord/alpha-nvim" },
   -- copilot: coding assistant llm
   { "github/copilot.vim" },
   -- toggeterm: easy toggle for shell access
@@ -42,6 +40,8 @@ require("lazy").setup({
   { "nvim-neorg/neorg",
     run = ":Neorg sync-parsers",
     requires = "nvim-lua/plenary.nvim"
-  }
+  },
+  -- project.nvim: project management
+  { "ahmedkhalf/project.nvim" },
 })
 

@@ -36,6 +36,15 @@ function taketar() {
   cd "$thedir"
 }
 
+# calls neovim with neorg plugin
+function journal() {
+  if [[ -z "$1" ]] then
+    nvim -c ":Neorg journal today"
+  else
+    nvim -c ":Neorg journal custom $1"
+  fi
+}
+
 # clones a git repository and cd's into it
 function takegit() {
   git clone "$1"
