@@ -10,7 +10,7 @@ function Colorize(color)
   vim.api.nvim_set_hl(0, "LineNr", { foreground = "#54546D", background = "none" })
 end
 
-vim.keymap.set("n", "<leader>hl", function() vim.cmd.Telescope("highlights"); end)
+vim.keymap.set("n", "<leader>hl", function() vim.cmd.Telescope("highlights"); end, { desc = "Search for highlights" })
 
 Colorize()
 Colorize()

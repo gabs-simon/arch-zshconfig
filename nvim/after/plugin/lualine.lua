@@ -1,3 +1,3 @@
 require("lualine").setup({
-  extensions = { 'mason', 'nvim-tree', 'lazy' }
+  extensions = { 'mason', 'nvim-tree', 'lazy', 'toggleterm' }
 })
