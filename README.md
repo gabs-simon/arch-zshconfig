@@ -12,20 +12,20 @@ My zsh config for setting up a nice looking Unix terminal from scratch.
 
 ## Installation
 
-1. Set your terminal app to use the installed Nerd Font.
-2. Clone this repo
+- Set your Terminal app to use the installed Nerd Font.
+- Clone this repo
 ```
 git clone https://github.com/gabs-simon/arch-zshconfig.git ~/arch-zshconfig
 ```
 
-3. Discard your current `~/.config` (if applicable) and make this repo your new `.config` folder
+- Discard your current `~/.config` (if applicable) and make this repo your new `.config` folder
 
 ```
 mv ~/.config ~/.config.prev
 mv ~/arch-zshconfig ~/.config
 ```
 
-4. Update your `~/.zshrc`
+- Update your `~/.zshrc`
 
 ```
 echo "source ~/.config/zsh/main.sh" >> ~/.zshrc
