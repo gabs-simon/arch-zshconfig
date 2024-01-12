@@ -1,4 +1,4 @@
-My zsh config for setting up a Unix terminal.
+My zsh config for setting up a Unix terminal from scratch.
 
 ## Requirements
 
@@ -16,7 +16,7 @@ My zsh config for setting up a Unix terminal.
 git clone https://github.com/gabs-simon/arch-zshconfig.git ~/arch-zshconfig
 ```
 
-3. Discard your current `~/.config` (if applicable) and make it 
+3. Discard your current `~/.config` (if applicable) and make this repo your new `.config` folder
 
 ```
 mv ~/.config ~/.config.prev
