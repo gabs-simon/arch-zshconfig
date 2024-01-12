@@ -1,4 +1,4 @@
-My zsh config for setting up a Unix terminal from scratch.
+My zsh config for setting up a nice looking Unix terminal from scratch.
 
 ## Requirements
 
@@ -8,6 +8,7 @@ My zsh config for setting up a Unix terminal from scratch.
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [thefuck](https://github.com/nvbn/thefuck)
 - [neofetch](https://github.com/dylanaraps/neofetch)
+- A nerd font (I recommend [Geist Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/GeistMono) or [Fira Code](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
 
 ## Installation
 
