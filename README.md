@@ -12,7 +12,7 @@ My zsh config for setting up a nice looking Unix terminal from scratch.
 
 ## Installation
 
-1. Set your terminal to use the installed Nerd Font.
+1. Set your terminal app to use the installed Nerd Font.
 2. Clone this repo
 ```
 git clone https://github.com/gabs-simon/arch-zshconfig.git ~/arch-zshconfig
