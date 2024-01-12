@@ -55,6 +55,10 @@ function takeFile() {
   wget "$1"
 }
 
+function autocommit() {
+  git diff --cached | sgpt "write a git commit message from the given git diff. output only the message, with no instructions or introduction" | git commit -c -F -
+}
+
 function take() {
   if [[ $1 =~ ^(https?|ftp).*\.(tar\.(gz|bz2|xz)|tgz)$ ]]; then
     taketar "$1"
