@@ -30,3 +30,6 @@ mv ~/arch-zshconfig ~/.config
 ```
 echo "source ~/.config/zsh/main.sh" >> ~/.zshrc
 ```
+## Colorscheme
+
+The colorscheme used by this setup is [Kanagawa](https://github.com/rebelot/kanagawa.nvim). Check the [extras folder on the Kanagawa repo](https://github.com/rebelot/kanagawa.nvim/tree/master/extras) for colorschemes to your Terminal app.
