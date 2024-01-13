@@ -56,7 +56,10 @@ function takeFile() {
 }
 
 function autocommit() {
-  git diff --cached | sgpt "write a git commit message from the given git diff. output only the message, with no instructions or introduction" | git commit -e -F -
+  git diff --cached | sgpt "write a git commit message from the given git diff. output only the message, with no instructions or introduction" | git commit -F -
+  if [ $? -eq 0 ]; then
+    git commit --amend
+  fi
 }
 
 function take() {
