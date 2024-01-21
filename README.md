@@ -7,8 +7,9 @@ My zsh config for setting up a nice looking Unix terminal from scratch.
 - [nvim](https://github.com/neovim/neovim)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [thefuck](https://github.com/nvbn/thefuck)
+- [lsd](https://github.com/lsd-rs/lsd)
 - [neofetch](https://github.com/dylanaraps/neofetch)
-- `make` and `cmake` for native fzf on nvim
+- `gcc`, `make` and `cmake` for native fzf on nvim
 - A nerd font (I recommend [Geist Mono](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/GeistMono) or [Fira Code](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode).)
 
 ## Installation
