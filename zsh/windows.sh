@@ -17,5 +17,3 @@ alias explorer="/mnt/c/Windows/explorer.exe";
 [[ -n ${key[Down]} ]] && bindkey "${key[Down]}" down-line-or-search
 [[ -n ${key[Right]} ]] && bindkey "${key[Right]}" forward-char
 
-source ~/.config/broot/launcher/bash/br
-

@@ -11,11 +11,11 @@ if [ $(uname | sed -n 's/.*\( *Darwin *\).*/\1/ip') ]; then
   source ~/.config/zsh/macos.sh
 fi
 
-# Aliases
-source ~/.config/zsh/aliases.sh
-
 # Paths
 source ~/.config/zsh/paths.sh
+
+# Aliases
+source ~/.config/zsh/aliases.sh
 
 # Completions
 source ~/.config/zsh/completions.sh
