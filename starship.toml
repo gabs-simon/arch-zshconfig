@@ -3,6 +3,9 @@
 [aws]
 disabled = true
 
+[container]
+disabled = true
+
 [gcloud]
 disabled = true
 
@@ -16,6 +19,12 @@ style = 'blue'
 style = 'blue bold'
 truncate_to_repo = false
 truncation_length = 8
+
+[jobs]
+disabled = true
+
+[os]
+disabled = false
 
 [python]
 disabled = true
