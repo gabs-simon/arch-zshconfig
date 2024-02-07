@@ -3,7 +3,7 @@ require('neorg').setup {
     ["core.defaults"] = {},
     ["core.journal"] = {
       config = {
-        workspace = "notes",
+        workspace = "note_root",
         journal_folder = "Journal"
       }
     },
