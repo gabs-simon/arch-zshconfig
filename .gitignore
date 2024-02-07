@@ -1,6 +1,5 @@
 shell_gpt/
 gh*
-thefuck/__pycache__/
 tmux/tmux.conf
 github-copilot
 zsh/plugins.sh.zwc
