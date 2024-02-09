@@ -45,6 +45,14 @@ require("lazy").setup({
     run = ":Neorg sync-parsers",
     requires = "nvim-lua/plenary.nvim"
   },
+  { 
+    "folke/which-key.nvim", 
+    event = "VeryLazy",
+    init = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+    end
+  },
   -- project.nvim: project management
   { "ahmedkhalf/project.nvim" },
 })
