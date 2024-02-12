@@ -55,5 +55,6 @@ require("lazy").setup({
   },
   -- project.nvim: project management
   { "ahmedkhalf/project.nvim" },
+  { "lewis6991/gitsigns.nvim" },
 })
 
