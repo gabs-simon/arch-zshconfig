@@ -1,12 +1,11 @@
 vim.opt.termguicolors = true
-require("bufferline").setup{
+local bufferline = require("bufferline")
+bufferline.setup{
   options = {
     separator_style = "slope",
     diagnostics = "nvim_lsp"
   },
 }
-
-local bufferline = require("bufferline")
 
 vim.keymap.set("n", "<leader>q", vim.cmd.bdelete, { desc = "Close buffer" })
 vim.keymap.set("n", "<leader>bl", vim.cmd.BufferLineCycleNext, { desc = "Next buffer" })

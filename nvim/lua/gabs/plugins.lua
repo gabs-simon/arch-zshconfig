@@ -1,4 +1,4 @@
-require("lazy").setup({ 
+require("lazy").setup({
   -- kanagawa: theme
   { "rebelot/kanagawa.nvim" },
   -- telescope: search interface
@@ -45,16 +45,18 @@ require("lazy").setup({
     run = ":Neorg sync-parsers",
     requires = "nvim-lua/plenary.nvim"
   },
-  { 
-    "folke/which-key.nvim", 
+  -- which-key: keybindings helper
+  {
+    "folke/which-key.nvim",
     event = "VeryLazy",
     init = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
     end
   },
-  -- project.nvim: project management
-  { "ahmedkhalf/project.nvim" },
+  -- gitsigns: git changes in the gutter
   { "lewis6991/gitsigns.nvim" },
+  -- neodev: helper for neovim setup
+  { "folke/neodev.nvim", opts = {} },
 })
 
