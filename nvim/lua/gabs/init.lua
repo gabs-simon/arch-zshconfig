@@ -13,3 +13,7 @@ vim.opt.smartindent = true
 require("gabs.lazy")
 require("gabs.plugins")
 require("gabs.remap")
+
+if vim.g.neovide then
+  require("gabs.neovide")
+end

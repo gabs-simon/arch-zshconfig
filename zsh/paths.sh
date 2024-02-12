@@ -7,3 +7,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
