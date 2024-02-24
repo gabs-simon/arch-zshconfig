@@ -45,7 +45,8 @@ require("lazy").setup({
     run = ":Neorg sync-parsers",
     requires = "nvim-lua/plenary.nvim"
   },
-  { 
+  { "ThePrimeagen/vim-be-good" },
+  {
     "folke/which-key.nvim", 
     event = "VeryLazy",
     init = function()
