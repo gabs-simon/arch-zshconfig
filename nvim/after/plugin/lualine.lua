@@ -3,7 +3,7 @@ local function show_macro_recording()
   if macro == '' then
     return ''
   else
-  return '@' .. macro
+  return 'recording @' .. macro
   end
 end
 
@@ -17,7 +17,7 @@ lualine.setup({
         "macro-recording",
         fmt = show_macro_recording,
         icon = "",
-        color = 'lualine_b_9',
+        color = 'Macro',
       },
       "branch",
       "diff",

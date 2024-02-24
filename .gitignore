@@ -35,3 +35,7 @@ systemsettingsrc
 user-dirs.dirs
 user-dirs.locale
 broot/
+graphite/
+htop/
+neovide
+thefuck/__pycache__/
