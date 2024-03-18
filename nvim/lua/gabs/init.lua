@@ -17,3 +17,10 @@ require("gabs.remap")
 if vim.g.neovide then
   require("gabs.neovide")
 end
+
+if vim.fn.has("unnamedplus") == 1 then
+    vim.cmd("set clipboard=unnamedplus")
+else
+    vim.cmd("set clipboard=unnamed")
+end
+
