@@ -45,6 +45,7 @@ require("lazy").setup({
     run = ":Neorg sync-parsers",
     requires = "nvim-lua/plenary.nvim"
   },
+  -- vim-be-good: vim exercises
   { "ThePrimeagen/vim-be-good" },
   -- which-key: keybindings helper
   {
@@ -59,5 +60,7 @@ require("lazy").setup({
   { "lewis6991/gitsigns.nvim" },
   -- neodev: helper for neovim setup
   { "folke/neodev.nvim", opts = {} },
+  -- minimap: code minimap
+  { "wfxr/minimap.vim" },
 })
 
