@@ -38,8 +38,6 @@ require("lazy").setup({
   { "goolord/alpha-nvim" },
   -- copilot: coding assistant llm
   { "github/copilot.vim" },
-  -- toggeterm: easy toggle for shell access
-  { "akinsho/toggleterm.nvim", version = "*", config = true },
   -- neorg: note-taking
   { "nvim-neorg/neorg",
     run = ":Neorg sync-parsers",
