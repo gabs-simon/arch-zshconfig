@@ -61,9 +61,25 @@ function autostack() {
     git commit --amend
   fi
 }
+
 function autocommit() {
+  local amend_flag=""
+  while [[ $# -gt 0 ]]; do
+    key="$1"
+    case $key in
+      -f|--force)
+        amend_flag="-f"
+        shift
+        ;;
+      *)
+        echo "Unknown option: $key" >&2
+        return 1
+        ;;
+    esac
+  done
+
   git diff --cached | sgpt "write a git commit message from the given git diff. output only the message, with no instructions or introduction" | git commit -F -
-  if [ $? -eq 0 ]; then
+  if [ $? -eq 0 ] && [ -z "$amend_flag" ]; then
     git commit --amend
   fi
 }
