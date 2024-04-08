@@ -22,6 +22,13 @@ lualine.setup({
       "branch",
       "diff",
       "diagnostics"
+    },
+    lualine_c = {
+      {
+        "filename",
+        file_status = true,
+        path = 1
+      },
     }
   }
 })
