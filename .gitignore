@@ -1,6 +1,5 @@
 shell_gpt/
 gh*
-tmux/tmux.conf
 github-copilot
 zsh/plugins.sh.zwc
 iterm2

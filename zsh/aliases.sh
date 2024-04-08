@@ -51,7 +51,7 @@ function takegit() {
   cd "$(basename ''${1%%.git})"
 }
 
-function takeFile() {
+function takefile() {
   wget "$1"
 }
 
