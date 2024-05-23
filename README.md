@@ -2,6 +2,8 @@ My zsh config for setting up a nice looking Unix terminal from scratch.
 
 ## Requirements
 
+- [tmux](https://github.com/tmux/tmux/wiki)
+- [tpm](https://github.com/tmux-plugins/tpm)
 - [zsh](https://github.com/zsh-users/zsh)
 - [starship](https://github.com/starship/starship)
 - [nvim](https://github.com/neovim/neovim)
