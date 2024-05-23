@@ -15,6 +15,12 @@ My zsh config for setting up a nice looking Unix terminal from scratch.
 
 ## Installation
 
+### From scratch on empty Arch installation as root
+- Copy and paste the code from `install.sh`
+- Run `setup_main $username $password`, replacing $username and $password with the username and password to create
+
+### On any other installation
+
 - Set your Terminal app to use the installed Nerd Font.
 - Clone this repo
 ```
