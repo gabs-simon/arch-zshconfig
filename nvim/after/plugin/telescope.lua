@@ -7,7 +7,6 @@ vim.keymap.set("n", "<leader>fs", function()
   builtin.grep_string({ search = vim.fn.input("Grep String > ") });
 end, { desc = "Fuzzy find using grep string" })
 
-require('telescope').load_extension('fzf')
 require('telescope').load_extension('media_files')
 
 require('telescope').setup {
