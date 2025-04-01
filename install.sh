@@ -10,7 +10,7 @@ install_git(){
 }
 
 install_everything(){
-    pacman -S git gcc make cmake zsh starship neovim zoxide lsd which python-pip thefuck tmux
+    pacman -S sudo git gcc make cmake zsh starship neovim zoxide lsd which python-pip thefuck tmux
 }
 
 setup_main() {
