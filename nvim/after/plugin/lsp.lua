@@ -5,10 +5,8 @@ lsp.preset("recommended")
 require("mason").setup({})
 require("mason-lspconfig").setup({
   ensure_installed = {
-    "tsserver",
-    "eslint",
+    "ts_ls",
     "lua_ls",
-    "rust_analyzer"
   },
   handlers = {
     lsp.default_setup

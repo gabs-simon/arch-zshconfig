@@ -34,13 +34,6 @@ require("lazy").setup({
   { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
   -- alpha: better initial screen
   { "goolord/alpha-nvim" },
-  -- copilot: coding assistant llm
-  { "github/copilot.vim" },
-  -- neorg: note-taking
-  { "nvim-neorg/neorg",
-    run = ":Neorg sync-parsers",
-    requires = "nvim-lua/plenary.nvim"
-  },
   -- vim-be-good: vim exercises
   { "ThePrimeagen/vim-be-good" },
   -- which-key: keybindings helper
